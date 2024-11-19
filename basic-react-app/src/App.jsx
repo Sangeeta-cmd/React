@@ -2,6 +2,8 @@ import './App.css'
 import Title from './Title.jsx'
 import ProductTab from "./ProductTab.jsx"
 import MsgBox from "./MsgBox.jsx"
+import Button from "./Button.jsx"
+import Form from "./Form.jsx"
 
 // function Title(){                                // title component 
 //   return <h1>This is a Title!</h1>;
@@ -14,8 +16,10 @@ import MsgBox from "./MsgBox.jsx"
 function App() {   // app component
   return (
     <>
-      <MsgBox userName = "Sangeeta" textColor = "blue" /> 
-      <ProductTab />
+      <Form />
+      {/* <Button /> */}
+      {/* <MsgBox userName = "Sangeeta" textColor = "blue" /> 
+      <ProductTab /> */}
     </>
   )
   
