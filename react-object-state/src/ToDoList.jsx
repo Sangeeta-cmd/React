@@ -96,9 +96,10 @@ export default function ToDoList() {
                 {todos.map(
                     (todo) => (
                         <li key={todo.id}>
-                            {todo.isDone === true ? 
+                            {/*{(todo.isDone) ?   
                             <span style = {{textDecorationLine:"line-through"}}>{todo.task}</span> : <span>{todo.task}</span>
-                            }
+                            }*/}
+                            <span style={ todo.isDone ? {textDecorationLine : "line-through"} : {}} >{todo.task}</span>
                             &nbsp; &nbsp;
                             <button onClick={() => deleteTodos(todo.id)}>delete</button>
                             &nbsp;&nbsp;
